@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#top-ad {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#top-ad a {
+    color: white;
+}
+
+.head {
+    padding: 3rem 5rem;
+    background-color: gainsboro;
+}
+
+.head > ul {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.banner {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1em;
+}
+
+#info > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#info ul {
+    list-style-type: none;
+}
+
+#info li {
+    padding: 0.5em 0;
+    text-justify: distribute-all-lines;
+}
+
+.banner section:nth-child(2) {
+    text-align: end;
+}
+
+.logos {
+    margin: 3rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.logos > img {
+    max-width: 90%;
+}
