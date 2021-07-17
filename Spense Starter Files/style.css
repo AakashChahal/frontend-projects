@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Cabin", sans-serif;
 }
 
 h1 {
@@ -45,6 +46,13 @@ nav > ul {
     gap: 1rem;
 }
 
+.btn {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
 .banner {
     padding: 2rem 0;
     display: grid;
@@ -58,8 +66,14 @@ nav > ul {
     font-size: 1.1em;
 }
 
+#info p {
+    color: rgb(53, 52, 52);
+}
+
 #info ul {
     list-style-type: none;
+    color: rgb(53, 52, 52);
+    font-weight: bold;
 }
 
 #info li {
@@ -75,6 +89,10 @@ nav > ul {
     text-align: end;
 }
 
+.input {
+    padding: 1rem;
+}
+
 .logos {
     margin: 3rem 5rem;
     display: grid;
@@ -85,18 +103,64 @@ nav > ul {
     max-width: 90%;
 }
 
-#escrow-banner {
+#escrow-banner > img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
     background-color: gainsboro;
-    margin: auto 5rem 3rem 5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    /* justify-content: space-between; */
+    margin: 0 5rem 3rem 5rem;
 }
 
 #overlay-text {
-    position: relative;
-    top: 0;
-    width: 50%;
-    left: 30%;
-    transform: translate(-50%, -150%);
+    position: absolute;
+    top: 65em;
+    right: 50%;
+    width: 40%;
+}
+
+#overlay-text p,
+a {
+    color: rgb(53, 52, 52);
+}
+
+#text-editor {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5rem 3rem 5rem;
+}
+
+.text {
+    justify-content: center;
+    align-self: center;
+}
+
+.text p,
+a {
+    color: rgb(53, 52, 52);
+}
+
+footer {
+    background-color: black;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    justify-content: space-around;
+    margin: 0 5rem;
+    padding: 2rem 0;
+    color: grey;
+    line-height: 1.5rem;
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+.foot-heading {
+    margin-left: 2rem;
+}
+
+.foot-info strong {
+    color: white;
 }
