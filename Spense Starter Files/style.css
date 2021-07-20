@@ -81,6 +81,10 @@ nav > ul {
     text-justify: distribute-all-lines;
 }
 
+.center-text {
+    vertical-align: middle;
+}
+
 .banner section:first-child {
     justify-content: center;
 }
